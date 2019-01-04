@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background-color: #f7f7f7;
+	font-size: 1em;
+	font-family: "Segoe UI", Arial, sans-serif;
+	line-height: 135%;
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid #ccc;
+	padding: 0;
+}
+
+.right {
+	float: right;
+}
+
+.left{
+	float:left;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: #F9922B;
+	text-decoration: none;
+	transition: all .6s ease-out;
+	-webkit-transition: all .6s ease-out;
+	-moz-transition: all .6s ease-out;
+	-ms-transition: all .6s ease-out;
+	-o-transition: all .6s ease-out;
+}
+
+a:hover {
+	color: #8b9ff5;
+	text-decoration: none;
+	transition: all .6s ease-out;
+	-webkit-transition: all .6s ease-out;
+	-moz-transition: all .6s ease-out;
+	-ms-transition: all .6s ease-out;
+	-o-transition: all .6s ease-out;
+}
+
+a:active {
+	color: #8ce4a6;
+	text-decoration: none;
+	transition: all .6s ease-out;
+	-webkit-transition: all .6s ease-out;
+	-moz-transition: all .6s ease-out;
+	-ms-transition: all .6s ease-out;
+	-o-transition: all .6s ease-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /*IE9*/
+}
+
+/*Selection block*/
+::selection {
+	background: #F9922B;
+	color: #fff; 
+};
+
+::-moz-selection {
+	background: #F9922B;
+	color: #fff; 
+};
+/**********header styles**************/
+
+header, footer {
+	background-size: #fff;
+	width: 98%;
+	float: left;
+}
+
+header {
+	border-bottom: 2px solid silver;
+	padding: 1%;
+}
+
+#logo {
+	font-size: 2em;
+	font-family: Comic Sans MS, sans-serif;
+	color: silver;
+}
+
+.contact {
+	font-size: 1.5em;
+	font-family: Comic Sans MS, sans-serif;
+	margin-left: 20px;
+}
+
+input[type=text].field {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+input[type=text].field:focus {
+	border: 2px solid #F9922B;
+}
+
+#menu {
+	color: #666;
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 1.7em;
+}
+
+#menu hr {
+	width: 500px;
+	max-width: 100%;
+	margin: 5px 0 10px 0;
+}
+
+#menuReff a {
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: #818181;
+}
+
+#menuReff a:hover {
+	background-color: #ececec;
+}
+
+/**********articles styles**********/
+
+#wrapper {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+#wrapper article {
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#wrapper article section {
+	float: left;
+	border: 1px solid silver;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #fafafa;
+	min-height: 400px;
+}
+
+@media(min-width: 900px){
+#wrapper article section {
+	width: 31.33%;
+	margin-left: 2%;
+	
+}}
+
+@media(max-width: 899px) and (min-width: 700px)  {
+#wrapper article section {
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+}}
+
+@media(max-width: 699px){
+#wrapper article section {
+	width: 100%;
+	margin-bottom: 2%;
+}}
+
+#wrapper article section img {
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid silver;
+}
+
+#wrapper article section h2 {
+	width: 90%;
+	margin-left: 5%;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: #4a4a4a;
+}
+
+#wrapper article section p {
+	width: 80%;
+	margin-left: 10%;
+	text-indent: 1em;
+}
+
+#wrapper article section a {
+	padding: 5px 10px ;
+	background-color: #ed7b7b;
+	margin-left: 5%;
+	border-radius: 10px;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+#wrapper article section a:hover {
+	background-color: #7feb6d;
+}
+/*********main social block styles*************************/
+#main_soc_blog {
+	width: 100%;
+	padding: 12% 0;
+	border-top: 2px solid silver;
+	border-bottom: 2px solid silver;
+	margin: 20px 0;
+	float: left;
+	background: url(../image/vaida-tamosauskaite-85608.jpg) repeat-x center;
+	height: 300px;
+}
+
+#main_soc_blog_in {
+	text-align: center;
+	padding: 1%;
+	height: 200px;
+	background-color: #fafafa;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 7px;
+	width: 500px;
+	max-width: 98%;
+}
+
+#main_soc_blog_in a {
+	float: left;
+	padding: 5px 10px;
+	background-color: #ed7b7b;
+	color: #fff;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 42%;
+}
+
+#main_soc_blog_in a:hover {
+	background-color: #7feb6d;
+}
+
+/***************footer styles*****************************/
+
+footer {
+	border-top: 2px solid silver;
+	padding: 1%;
+	padding-bottom: 2%;
+	margin-top: 10px;
+}
+
+footer i {
+	float:left;
+	margin-right: 5px;
+}
+
+#page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer, #page-wrap:after {
+	height: 10px;
+}
+
+#page-wrap {
+	min-height: 94%;
+	margin-bottom: -10px;
+}
+
+/***********About us styles*********************/
+
+#about_us {
+	width: 60%;
+	float: left;
+	background-color: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+	margin-left: 3%;
+}
+
+#columnRight {
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	background-color: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+/*********support styles************/
+#support form {
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+}
+
+#support form label {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#support form input {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	width: 40%;
+	background-color: #fafafa;
+}
+
+#support form input:focus {
+	border: 2px solid #F9922B;
+}
+
+#support form textarea {
+	width: 60%;
+	float: left;
+	clear: both; 
+	background-color: #fafafa;
+	border: 2px solid silver;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+#support form #send {
+	float: left;
+	padding: 5px;
+	background-color: #f37a7a;
+	border-radius: 5px;
+	margin-top: 5px;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+#support form #send:hover {
+	background-color: #A5AF55;
+}
